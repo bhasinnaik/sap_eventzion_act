@@ -15,7 +15,7 @@ import "./style.css";
 const Sidebar = () => {
     return (
 //this js contains sidebar component on activity screen.
-<div style={{ display: 'flex', height: '100vh', overflow: 'scroll initial' }}>
+<div style={{ display: 'flex', height: '75vh', overflow: 'scroll initial' }}>
 <CDBSidebar textColor="#333" backgroundColor="#f0f0f0">
   <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
     <a href="/" className="text-decoration-none" style={{ color: 'inherit' }}>
@@ -24,35 +24,14 @@ const Sidebar = () => {
   </CDBSidebarHeader>
   <CDBSidebarContent>
     <CDBSidebarMenu>
-    <CDBSidebarMenuItem
-              suffix={
-                <CDBBadge color="danger" size="small" borderType="pill">
-                  Home
-                </CDBBadge>
-              }
-              icon="home"
-            >
+    <CDBSidebarMenuItem icon="home" >
                 Home
               </CDBSidebarMenuItem>
-              <CDBSidebarMenuItem
-              suffix={
-                <CDBBadge color="danger" size="small" borderType="pill">
-                  Home
-                </CDBBadge>
-              }
-              icon="plus"
-            >
+              <CDBSidebarMenuItem icon="plus" >
                 add
               </CDBSidebarMenuItem>
-              <CDBSidebarMenuItem
-              suffix={
-                <CDBBadge color="danger" size="small" borderType="pill">
-                  Home
-                </CDBBadge>
-              }
-              icon="gamepad"
-            >
-                add
+              <CDBSidebarMenuItem icon="gamepad">
+                Activities
               </CDBSidebarMenuItem>
     </CDBSidebarMenu>
   </CDBSidebarContent>
@@ -67,7 +46,11 @@ const Sidebar = () => {
     </div>
   </CDBSidebarFooter>
 </CDBSidebar>
+<div>
+  content
 </div>
+</div>
+
 );
 };
 
